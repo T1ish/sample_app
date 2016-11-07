@@ -5,6 +5,12 @@ source 'https://rubygems.org'
 gem 'rails', '5.0.0.1'
 # Use bcrypt for the has_secure_password
 gem 'bcrypt', '3.1.11'
+# Use faker for inserting and using fake profile users.
+gem 'faker', '1.6.6'
+# Use will_paginate to paginate the list items.
+gem 'will_paginate', '3.1.0'
+# Use Bootstrap's will_paginate to configure will_paginate to use Bootstrap’s pagination styles.
+gem 'bootstrap-will_paginate', '0.0.10'
 # Use Puma as the app server
 gem 'puma', '3.4.0'
 # Use SCSS for stylesheets

@@ -1,0 +1,25 @@
+<% provide(:title, 'All users') %>
+
+<h1>All users</h1>
+
+<%= will_paginate %> 
+
+<ul class="users">
+<!-- This code can be written compact by using partials, look below after the commented section.
+	<% @users.each do |user| %>
+		<li>
+			<%= gravatar_for user, size: 50 %>
+			<%= link_to user.name, user %>
+		</li>
+	<% end %>
+	-->
+<!-- This code uses variable user instead of string 'user' but it can be even more compact but focusing on the object @user which Rails will go through automatically. Look below after this commented section.
+	<% @users.each do |user| %>
+	<%= render user %>
+	<% end %>
+	-->
+
+	<%= render @users %>
+</ul>
+
+<%= will_paginate %>
